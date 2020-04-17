@@ -1,0 +1,154 @@
+.countries-table-container {
+  box-shadow: 1px 1px 10px 2px #d3d3d3;
+  width: 98%;
+  padding: 20px 10px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  height: 500px;
+
+  .countries-table-title {
+    padding: 20px 0;
+    font-weight: 600;
+    font-size: 20px;
+    letter-spacing: 1px;
+    color: #8ACA2B;;
+  }
+
+  .table-container {
+    height: 100vh;
+  }
+  .table-header {
+    display: flex;
+    flex-direction: row;
+    font-weight: 600;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+
+    .Country {
+      width: 38%;
+    }
+    .Confirmed {
+      width: 13%;
+    }
+    .Recovered {
+      width: 15%;
+    }
+    .Critical {
+      width: 13%;
+      text-align: justify;
+    }
+    .Deaths {
+      width: 15%;
+    }
+  }
+  .table-body {
+    display: flex;
+    flex-direction: column;
+    max-height: 370px;
+    overflow: auto;
+
+    .loader {
+      text-align: center;
+      margin: auto;
+      line-height: 15;
+    }
+
+    .table-data {
+      display: flex;
+      flex-direction: row;
+      padding: 5px;
+      box-shadow: 1px 1px 10px 2px #d3d3d3;
+      margin: 5px;
+
+      .Country {
+        width: 40%;
+        color: #00f;
+        letter-spacing: 1px;
+      }
+      .Confirmed {
+        width: 15%;
+        color: #696969;
+      }
+      .Recovered {
+        width: 15%;
+        color: #696969;
+      }
+      .Critical {
+        width: 15%;
+        color: #696969;
+      }
+      .Deaths {
+        width: 15%;
+        color: #696969;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 960px) {
+
+  .countries-table-container {
+    width: 94%;
+  }
+  .table-header {
+    .Country {
+      width: 28% !important;
+      word-wrap: break-word;
+      text-align: center;
+    }
+    .Confirmed {
+      width: 20% !important;
+      word-wrap: break-word;
+      text-align: center;
+    }
+    .Recovered {
+      width: 15% !important;
+      word-wrap: break-word;
+      padding: 0 5px;
+    }
+    .Critical {
+      width: 16% !important;
+      word-wrap: break-word;
+      text-align: center;
+    }
+    .Deaths {
+      width: 15% !important;
+      word-wrap: break-word;
+      text-align: center;
+    }
+  }
+  .table-data {
+    .Country {
+      width: 28% !important;
+      word-wrap: break-word;
+      text-align: center;
+      padding: 0 5px;
+    }
+    .Confirmed {
+      width: 20% !important;
+      word-wrap: break-word;
+      text-align: center;
+      padding: 0 5px;
+    }
+    .Recovered {
+      width: 15% !important;
+      word-wrap: break-word;
+      padding: 0 5px;
+    }
+    .Critical {
+      width: 15% !important;
+      word-wrap: break-word;
+      text-align: center;
+      padding: 0 5px;
+    }
+    .Deaths {
+      width: 15% !important;
+      word-wrap: break-word;
+      text-align: center;
+      padding: 0 5px;
+    }
+  }
+}
+

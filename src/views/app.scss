@@ -1,0 +1,23 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Didact Gothic', sans-serif;
+
+  .detail-container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 20px;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .detail-container {
+    display: flex !important;
+    flex-direction: column;
+
+    .total-section {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+}
