@@ -29,7 +29,7 @@ class Totals extends Component{
                 <div className='card-body'>
                     {cases === ""
                         ? <Loader type="TailSpin" height={30} color="blue"/>
-                        : cases.replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')
+                        : cases.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,')
                     }
                 </div>
             </div>
